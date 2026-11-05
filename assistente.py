@@ -372,3 +372,4 @@ class Assistente:
                     print("Digite um número de 1 a 5.")
             except ValueError:
                 print("Entrada inválida. Digite um número de 1 a 5.")
+

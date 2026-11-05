@@ -1,4 +1,13 @@
 data,origem,pergunta,id_orientacao,encontrou,ajudou,tentativas,tempo
-2026-11-05 12:04:28,pergunta,Como faço a carteira de trabalho?,1,True,True,1,0.0
-2026-11-05 12:04:35,pergunta,como funciona o pix?,,False,False,1,0.0
-2026-11-05 12:04:35,categoria,Tirar a Carteira de Trabalho Digital (CTPS Digital),1,True,True,1,0.0
+2026-11-05 10:14:22,pergunta,como tirar carteira de trabalho digital,1,True,True,1,2.1
+2026-11-05 10:16:05,pergunta,preciso de titulo de eleitor para trabalhar,3,True,True,1,1.8
+2026-11-05 10:18:40,pergunta,qual a idade minima para ser jovem aprendiz,6,True,True,1,2.4
+2026-11-05 10:21:15,pergunta,como tirar certificado de reservista militar,,False,False,2,1.5
+2026-11-05 10:35:10,pergunta,como abrir conta bancaria sendo menor de idade,8,True,True,1,2.0
+2026-11-05 10:37:45,pergunta,como consultar meu fgts da empresa,12,True,True,1,2.3
+2026-11-05 10:40:20,pergunta,estagiario tem direito a ferias e bolsa auxilio,7,True,True,1,2.7
+2026-11-05 10:42:55,pergunta,como fazer cadastro no sine para arrumar emprego,5,True,True,1,1.9
+2026-11-05 11:02:18,pergunta,como criar login no gov br pelo celular,11,True,True,1,2.2
+2026-11-05 11:04:50,pergunta,como tirar a nova identidade cin,4,True,True,1,1.7
+2026-11-05 11:07:30,pergunta,como saber se meu nome esta no spc ou serasa,9,True,True,1,2.5
+2026-11-05 11:10:05,pergunta,preciso declarar imposto de renda no primeiro emprego,10,True,True,1,2.1

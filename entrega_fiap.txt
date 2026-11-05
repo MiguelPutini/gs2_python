@@ -1,0 +1,9 @@
+Nome do assistente: Citizen Assist AI
+Público atendido: Jovens no primeiro emprego (14 a 24 anos) - Documentos, Trabalho e Finanças
+Integrantes e RM:
+- [Nome do Integrante 1] - RM: [XXXXX]
+- [Nome do Integrante 2] - RM: [XXXXX]
+- [Nome do Integrante 3] - RM: [XXXXX]
+
+Link do repositório GitHub: https://github.com/[SEU-USUARIO]/citizen-assist-ai
+Link do vídeo técnico no YouTube: https://youtu.be/[SEU-LINK-AQUI]

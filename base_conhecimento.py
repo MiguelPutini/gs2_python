@@ -86,3 +86,4 @@ class BaseConhecimento:
         # Ordena da maior para a menor pontuação
         resultados.sort(key=lambda x: x[0], reverse=True)
         return resultados
+
