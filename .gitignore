@@ -7,6 +7,9 @@ __pycache__/
 .env
 local_config.json
 
+# Material interno e roteiro de gravacao
+ROTEIRO_GRAVACAO_VIDEO.md
+
 # Arquivos de log e depuracao
 *.log
 logs/
