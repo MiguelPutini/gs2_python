@@ -1,0 +1,34 @@
+[
+  {
+    "data": "2026-11-05 12:04:28",
+    "origem": "pergunta",
+    "pergunta": "Como faço a carteira de trabalho?",
+    "id_orientacao": 1,
+    "encontrou": true,
+    "ajudou": true,
+    "tentativas": 1,
+    "tempo": 0.0,
+    "nota_facilidade": 3
+  },
+  {
+    "data": "2026-11-05 12:04:35",
+    "origem": "pergunta",
+    "pergunta": "como funciona o pix?",
+    "id_orientacao": null,
+    "encontrou": false,
+    "ajudou": false,
+    "tentativas": 1,
+    "tempo": 0.0
+  },
+  {
+    "data": "2026-11-05 12:04:35",
+    "origem": "categoria",
+    "pergunta": "Tirar a Carteira de Trabalho Digital (CTPS Digital)",
+    "id_orientacao": 1,
+    "encontrou": true,
+    "ajudou": true,
+    "tentativas": 1,
+    "tempo": 0.0,
+    "nota_facilidade": 4
+  }
+]

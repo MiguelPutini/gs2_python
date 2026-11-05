@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "categoria": "Documentos",
+    "titulo": "Tirar a Carteira de Trabalho Digital (CTPS Digital)",
+    "palavras_chave": ["carteira de trabalho", "ctps", "carteira digital", "ctps digital", "trabalho digital"],
+    "resposta": "A Carteira de Trabalho agora é digital e está vinculada ao seu CPF. Basta baixar o app 'Carteira de Trabalho Digital' (Android/iOS) ou acessar o portal Gov.br. Não é mais necessário ir a um posto do Ministério do Trabalho.",
+    "documentos": ["CPF", "Conta Gov.br (nível prata ou ouro)"],
+    "onde": "Aplicativo Carteira de Trabalho Digital ou portal servicos.mte.gov.br",
+    "fonte": "https://www.gov.br/trabalho-e-emprego",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 2,
+    "categoria": "Documentos",
+    "titulo": "Tirar o CPF pela primeira vez",
+    "palavras_chave": ["cpf", "cadastro cpf", "tirar cpf", "primeiro cpf", "fazer cpf"],
+    "resposta": "O CPF pode ser feito gratuitamente em qualquer agência dos Correios, Banco do Brasil ou Caixa Econômica Federal. Também é possível solicitar pela internet no site da Receita Federal. Menores de 16 anos precisam de um responsável.",
+    "documentos": ["Certidão de nascimento ou documento de identidade", "Documento do responsável (se menor de 16 anos)"],
+    "onde": "Agências dos Correios, Banco do Brasil, Caixa Econômica ou site da Receita Federal",
+    "fonte": "https://www.gov.br/receitafederal",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 3,
+    "categoria": "Documentos",
+    "titulo": "Tirar o Título de Eleitor",
+    "palavras_chave": ["titulo de eleitor", "titulo eleitor", "eleitor", "alistamento eleitoral", "voto"],
+    "resposta": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para jovens de 16 e 17 anos. Pode ser feito online pelo site do TSE (Título Net) ou presencialmente em um cartório eleitoral.",
+    "documentos": ["Documento de identidade com foto", "Comprovante de residência recente"],
+    "onde": "Site Título Net (titulos.tse.jus.br) ou cartório eleitoral",
+    "fonte": "https://www.tse.jus.br",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 4,
+    "categoria": "Documentos",
+    "titulo": "Fazer o RG ou a Carteira de Identidade Nacional (CIN)",
+    "palavras_chave": ["rg", "identidade", "carteira de identidade", "cin", "documento de identidade"],
+    "resposta": "A nova Carteira de Identidade Nacional (CIN) usa o CPF como número único. É gratuita na primeira via. Agende pelo site do instituto de identificação do seu estado.",
+    "documentos": ["Certidão de nascimento ou casamento", "CPF"],
+    "onde": "Postos de identificação (Poupatempo em SP, Detran em outros estados)",
+    "fonte": "https://www.gov.br/gestao/pt-br/cin",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 5,
+    "categoria": "Trabalho",
+    "titulo": "Como procurar o primeiro emprego pelo SINE",
+    "palavras_chave": ["primeiro emprego", "emprego", "sine", "vaga de emprego", "procurar emprego"],
+    "resposta": "O SINE (Sistema Nacional de Emprego) oferece vagas gratuitas. Acesse o app 'Sine Fácil' ou vá a uma agência do trabalhador. Cadastre-se, busque vagas na sua região e candidate-se diretamente pelo sistema.",
+    "documentos": ["CPF", "Carteira de Trabalho Digital"],
+    "onde": "Aplicativo Sine Fácil ou agência do trabalhador / PAT da sua cidade",
+    "fonte": "https://www.gov.br/trabalho-e-emprego",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 6,
+    "categoria": "Trabalho",
+    "titulo": "Direitos do jovem aprendiz",
+    "palavras_chave": ["jovem aprendiz", "aprendiz", "menor aprendiz", "programa aprendiz", "aprendizagem"],
+    "resposta": "O programa Jovem Aprendiz é para jovens de 14 a 24 anos. O contrato pode durar até 2 anos, com jornada de até 6h/dia. Você tem direito a salário mínimo/hora, FGTS (2%), vale-transporte, 13º e férias. A empresa deve oferecer curso de formação.",
+    "documentos": ["CPF", "RG ou CIN", "Carteira de Trabalho Digital", "Comprovante de matrícula escolar"],
+    "onde": "Empresas participantes do programa ou instituições como CIEE, Espro e Nube",
+    "fonte": "https://www.gov.br/trabalho-e-emprego",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 7,
+    "categoria": "Trabalho",
+    "titulo": "Como funciona o contrato de estágio",
+    "palavras_chave": ["estagio", "contrato de estagio", "estagiar", "estagiario", "lei do estagio"],
+    "resposta": "O estágio não é emprego: é um ato educativo. A jornada máxima é de 6h/dia (30h/semana). Você tem direito a bolsa-auxílio, seguro contra acidentes, recesso de 30 dias a cada 12 meses e auxílio-transporte. O estágio deve ter relação com o seu curso.",
+    "documentos": ["Matrícula ativa em instituição de ensino", "Termo de Compromisso de Estágio (TCE) assinado pela empresa, escola e aluno"],
+    "onde": "Empresas com programa de estágio, plataformas como CIEE, Nube, Companhia de Estágios",
+    "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11788.htm",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 8,
+    "categoria": "Finanças",
+    "titulo": "Abrir conta bancária sendo menor de 18 anos",
+    "palavras_chave": ["conta bancaria", "abrir conta", "banco", "conta menor", "conta jovem"],
+    "resposta": "Menores de 18 anos podem abrir conta com autorização dos pais ou responsável legal. Bancos digitais como Nubank, C6 Bank e Inter oferecem contas para menores a partir de 16 anos (alguns a partir de 12). A conta pode ser usada para receber salário de Jovem Aprendiz.",
+    "documentos": ["CPF do jovem", "RG ou CIN do jovem", "CPF e RG do responsável legal"],
+    "onde": "Agências bancárias ou aplicativos de bancos digitais",
+    "fonte": "https://www.bcb.gov.br",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 9,
+    "categoria": "Finanças",
+    "titulo": "Como consultar e limpar o nome no SPC/Serasa",
+    "palavras_chave": ["spc", "serasa", "nome sujo", "limpar nome", "consultar cpf", "divida"],
+    "resposta": "Consulte gratuitamente sua situação no site ou app do Serasa (serasa.com.br). Se houver dívida, o Serasa Limpa Nome oferece negociação online com descontos. Feirões de negociação também ocorrem periodicamente. Após o pagamento, seu nome é limpo em até 5 dias úteis.",
+    "documentos": ["CPF"],
+    "onde": "Site serasa.com.br ou app Serasa",
+    "fonte": "https://www.serasa.com.br",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 10,
+    "categoria": "Finanças",
+    "titulo": "Declarar Imposto de Renda pela primeira vez",
+    "palavras_chave": ["imposto de renda", "irpf", "declarar imposto", "imposto", "declaracao"],
+    "resposta": "Você é obrigado a declarar se recebeu mais de R$ 33.888,00 de renda tributável no ano. Baixe o programa IRPF no site da Receita Federal ou use o app 'Meu Imposto de Renda'. Junte seus informes de rendimentos (empresa, banco) e preencha. O prazo geralmente vai de março a maio.",
+    "documentos": ["CPF", "Informes de rendimentos (da empresa e do banco)", "Comprovante de endereço"],
+    "onde": "Programa IRPF da Receita Federal ou app Meu Imposto de Renda",
+    "fonte": "https://www.gov.br/receitafederal",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 11,
+    "categoria": "Documentos",
+    "titulo": "Como criar conta Gov.br",
+    "palavras_chave": ["gov.br", "conta gov", "govbr", "governo digital", "login gov"],
+    "resposta": "A conta Gov.br é o login único do governo federal. Crie pelo app Gov.br ou pelo site. Com ela você acessa CTPS Digital, INSS, Receita Federal e mais de 4.000 serviços. Valide com reconhecimento facial no app para ter nível ouro.",
+    "documentos": ["CPF", "Celular com câmera (para validação facial)"],
+    "onde": "App Gov.br (Android/iOS) ou site acesso.gov.br",
+    "fonte": "https://www.gov.br/governodigital",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 12,
+    "categoria": "Trabalho",
+    "titulo": "Como consultar o FGTS e sacar em caso de demissão",
+    "palavras_chave": ["fgts", "fundo de garantia", "saque fgts", "consultar fgts", "demissao"],
+    "resposta": "Consulte seu saldo pelo app FGTS da Caixa. Em caso de demissão sem justa causa, você pode sacar o saldo total + multa de 40%. Também pode sacar no saque-aniversário (se optou) ou para compra de imóvel. O saque por demissão é liberado em até 5 dias úteis após a empresa dar baixa.",
+    "documentos": ["CPF", "Carteira de Trabalho Digital", "Documento de identidade"],
+    "onde": "Aplicativo FGTS da Caixa ou agência da Caixa Econômica Federal",
+    "fonte": "https://www.caixa.gov.br/beneficios-trabalhador/fgts",
+    "verificado_em": "2026-11-05"
+  }
+]
