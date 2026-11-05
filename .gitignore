@@ -1,5 +1,22 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Arquivos de configuracao local e variaveis de ambiente
+.env
+local_config.json
+
+# Arquivos de log e depuracao
+*.log
+logs/
+
+# IDEs e editores
 .vscode/
 .idea/
+*.swp
+*.swo
 
+# Sistema operacional
+.DS_Store
+Thumbs.db

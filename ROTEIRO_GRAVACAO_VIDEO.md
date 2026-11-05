@@ -1,146 +1,188 @@
 # 🎬 Roteiro de Gravação do Vídeo Técnico (3 Integrantes)
 **Projeto:** Citizen Assist AI — Assistente Digital de Orientação ao Cidadão  
 **Disciplina:** Pensamento Computacional e Automação com Python — FIAP (GS 2026.2)  
-**Tempo total estimado:** ~6 minutos e 30 segundos (Regra da FIAP: **entre 5 e 8 minutos** no YouTube como não listado).
+**Tempo total planejado:** **6 minutos e 30 segundos**  
+*(Critério eliminatório do edital: **mínimo de 5 minutos e máximo de 8 minutos**, no YouTube como não listado).*
 
 ---
 
-## 📋 Recomendações Importantes Antes de Gravar
-1. **Configuração da Tela:** Deixe aberto o VS Code com fonte legível (Zoom: Ctrl + +) e um terminal limpo ao lado ou embaixo.
-2. **Abas abertas no VS Code:** `main.py`, `orientacao.py`, `base_conhecimento.py`, `assistente.py`, `data/base_conhecimento.json`, `data/historico.json` e `data/atendimentos.csv`.
-3. **Câmera:** É opcional. O mais importante é o áudio claro e a tela 100% legível.
-4. **Regra de ouro:** **Não usar voz sintética ou IA**. Todos os 3 integrantes devem falar individualmente.
+## ⚠️ Checklist Obrigatório Antes de Gravar
+1. **Duração do vídeo:** Deve ter **mais de 5 minutos** e **menos de 8 minutos**. O roteiro abaixo possui pausas e falas calculadas para cravar entre 6m e 7m. Mantenham um cronômetro na tela ou no celular!
+2. **Narração humana obrigatória:** **Não é permitida voz de IA ou sintética**. Cada um dos 3 integrantes **deve falar**, explicando uma parte técnica.
+3. **Tela legível:** Resolução de gravação em 1080p, tema escuro ou claro legível no VS Code (use `Ctrl + +` para aumentar a fonte) e terminal aberto mostrando as saídas de forma nítida.
+4. **Abas abertas no VS Code:**
+   - `orientacao.py`
+   - `base_conhecimento.py`
+   - `assistente.py`
+   - `main.py`
+   - `data/base_conhecimento.json`
+   - `data/historico.json`
+   - `data/atendimentos.csv`
+   - `.gitignore` e `.env.example`
 
 ---
 
-## ⏱️ Linha do Tempo e Distribuição
+## ⏱️ Grade de Tempo por Integrante (Total: ~6m 30s)
 
-| Bloco | Responsável | Tópicos Obrigatórios | Duração |
-|---|---|---|---|
-| **Parte 1** | **Integrante 1** | 1. Equipe, público e problema escolhido<br>2. JSON, registros, dicionários e tuplas<br>3. Classes: atributos, métodos, `self` e composição | ~2m 00s |
-| **Parte 2** | **Integrante 2** | 4. Busca inteligente: `normalizar()` e `pontuar()` com cálculo real<br>5. Execução no terminal: encontrada, não encontrada, inválida, dado pessoal e categorias | ~2m 30s |
-| **Parte 3** | **Integrante 3** | 6. Alteração ao vivo no JSON (palavra-chave)<br>7. `historico.json`, CSV e indicadores do teste real<br>8. Decisão técnica e limitação do assistente | ~2m 00s |
-
----
-
-## 🎭 ROTEIRO DETALHADO FALA POR FALA
+```
+[00:00 - 02:15] Integrante 1: Abertura, Público/Problema, JSON, Dicionários, Tuplas e Classes OO (~2m 15s)
+[02:15 - 04:45] Integrante 2: Busca Inteligente (normalizar/pontuar) e Execução Completa no Terminal (~2m 30s)
+[04:45 - 06:30] Integrante 3: Alteração ao Vivo no JSON, Histórico, CSV, Indicadores e Fechamento (~1m 45s)
+```
 
 ---
 
-### 🎙️ PARTE 1 — Integrante 1 (~2 min)
-*Foco: Abertura, Contexto, Estruturas de Dados (JSON, Dicionários, Tuplas) e Orientação a Objetos.*
-
-#### 1. Equipe, público e problema escolhido (até 30s)
-> **[Integrante 1 falando]:**  
-> "Olá a todos! Somos a equipe composta por [Nome 1 - RM], [Nome 2 - RM] e [Nome 3 - RM].  
-> Para esta Global Solution de Pensamento Computacional e Automação com Python, desenvolvemos o **Citizen Assist AI**, voltado para **jovens no primeiro emprego, entre 14 e 24 anos**.  
-> O problema que atacamos é a desinformação burocrática: quem está ingressando no mercado tem dúvidas críticas sobre emissão da Carteira de Trabalho Digital, regras de Jovem Aprendiz, Lei do Estágio e finanças básicas. Nosso assistente orienta esse público de forma rápida, com fontes oficiais do governo, sem coletar dados pessoais e em linguagem acessível."
-
-#### 2. JSON: Registro explicado, dicionários e tuplas (~45s)
-*(Ação na tela: Mostrar o arquivo `data/base_conhecimento.json` aberto no editor).*
-> **[Integrante 1 falando]:**  
-> "A base de conhecimento fica em `data/base_conhecimento.json`. É uma lista de dicionários em Python, onde cada objeto representa uma orientação oficial completa.  
-> Vejam este exemplo do registro 1: temos campos obrigatórios como `id`, `categoria`, `titulo`, a lista de `palavras_chave`, o texto explicativo em `resposta`, a lista de `documentos`, o local de atendimento em `onde`, o link oficial verificado em `fonte` e a data de verificação em `verificado_em`.  
-> No Python, usamos **dicionários** pela flexibilidade de mapear chaves e valores, e utilizamos **tuplas** no retorno da nossa busca inteligente, onde cada resultado é uma tupla imutável contendo `(pontos, orientacao)`. A tupla garante integridade para que a nota atribuída e a referência do objeto não sejam alteradas acidentalmente durante a ordenação."
-
-#### 3. Classes: Atributos, métodos, `self` e composição (~45s)
-*(Ação na tela: Mostrar os arquivos `orientacao.py`, `base_conhecimento.py` e `assistente.py`).*
-> **[Integrante 1 falando]:**  
-> "Nosso código é estruturado em três classes bem modularizadas:
-> - A classe `Orientacao` guarda os atributos de uma orientação específica e possui o método `exibir()`, que imprime o card formatado no terminal.
-> - A classe `BaseConhecimento` recebe o caminho do JSON, faz a leitura tolerante a falhas no método `carregar()`, lista categorias e gerencia o algoritmo de busca.
-> - A classe `Assistente` orquestra o diálogo com o cidadão, faz o tratamento de segurança e gera os relatórios.
-> O parâmetro `self` é fundamental porque referencia a instância ativa que está executando a operação, permitindo isolar atributos de estado como o histórico e a coleção de orientações.  
-> Além disso, aplicamos o conceito de **composição de classes**: o `Assistente` contém uma instância de `BaseConhecimento`, que por sua vez contém uma lista de objetos do tipo `Orientacao`. Isso desacopla as responsabilidades com elegância."
+## 🎭 ROTEIRO DETALHADO — FALA POR FALA
 
 ---
 
-### 🎙️ PARTE 2 — Integrante 2 (~2 min 30 s)
-*Foco: Algoritmo de Busca por Regras e Demonstração Completa da Execução no Terminal.*
+### 🎙️ PARTE 1 — Integrante 1 (00:00 até 02:15 — ~2m 15s)
+*Responsabilidades: Apresentação inicial (até 30s), Estrutura JSON com dicionários/tuplas e Arquitetura de Classes/Composição.*
 
-#### 4. Busca: `normalizar()` e `pontuar()` com cálculo real (~50s)
-*(Ação na tela: Mostrar a função `normalizar()` e o método `pontuar()` em `base_conhecimento.py`).*
-> **[Integrante 2 falando]:**  
-> "Agora vou explicar o motor de busca inteligente por regras do assistente.  
-> Primeiro, a função `normalizar()` remove qualquer acentuação usando uma tabela de mapeamento, converte tudo para minúsculas e substitui pontuações por espaços, garantindo que 'Título' e 'titulo' sejam equivalentes.  
-> Em seguida, o método `pontuar()` aplica as regras do edital:
-> - Para cada **palavra-chave** da orientação que aparece na pergunta normalizada, somamos **+3 pontos**.
-> - Para cada palavra da pergunta com **4 letras ou mais** que aparece no título da orientação, somamos **+1 ponto**.  
-> Vamos ver um exemplo real: se o usuário perguntar:  
+#### 1. Equipe, público e problema escolhido [00:00 - 00:30]
+*(Ação na tela: Mostrar o `README.md` com a tabela de integrantes e o título do projeto).*
+
+> **[Integrante 1]:**  
+> *"Olá a todos, sejam bem-vindos! Somos o grupo composto por [Nome do Integrante 1, RM], [Nome do Integrante 2, RM] e [Nome do Integrante 3, RM].  
+> Para a Global Solution da disciplina de Pensamento Computacional e Automação com Python, desenvolvemos o **Citizen Assist AI**, um assistente de terminal focado em **jovens no primeiro emprego, entre 14 e 24 anos**.  
+> Identificamos que o jovem que está iniciando a vida profissional enfrenta uma enorme barreira de desinformação: informações sobre emissão da Carteira de Trabalho Digital, regras de contratação de Jovem Aprendiz, direitos de Estágio e finanças básicas estão espalhadas em sites governamentais complexos ou misturadas com canais não oficiais. Criamos um assistente transparente, seguro, que não coleta nenhum dado pessoal e orienta o cidadão com base estritamente em fontes verificadas."*
+
+#### 2. JSON: Registro explicado, dicionários e tuplas [00:30 - 01:15]
+*(Ação na tela: Abrir o arquivo `data/base_conhecimento.json` e selecionar o bloco do registro com `"id": 1`).*
+
+> **[Integrante 1]:**  
+> *"Vou começar explicando nossa base de dados em `data/base_conhecimento.json`. Ela é estruturada como uma lista de **dicionários** em Python, atendendo a todos os requisitos do edital, com 12 orientações em 3 categorias: Documentos, Trabalho e Finanças.  
+> Cada registro possui campos obrigatórios e bem definidos:  
+> - O `id` numérico único;  
+> - A `categoria`;  
+> - O `titulo` oficial do serviço;  
+> - A lista de `palavras_chave` que abastece o motor de busca;  
+> - A `resposta` em linguagem simples e direta;  
+> - A lista de `documentos` exigidos;  
+> - O local físico ou digital em `onde`;  
+> - O link com protocolo seguro em `fonte`;  
+> - E a data de checagem em `verificado_em`.  
+> Trabalhamos com **dicionários** porque nos dão busca eficiente por chaves e serialização direta em JSON. Além disso, utilizamos **tuplas** no retorno da nossa função de busca. O método devolve tuplas contendo `(pontos, orientacao)`. A imutabilidade da tupla é intencional: garante que o par formado pela pontuação calculada e a referência do objeto permaneça íntegro durante toda a ordenação decrescente do ranking."*
+
+#### 3. Classes: Atributos, métodos, `self` e composição [01:15 - 02:15]
+*(Ação na tela: Alternar mostrando `orientacao.py`, `base_conhecimento.py` e `assistente.py`).*
+
+> **[Integrante 1]:**  
+> *"A arquitetura de software foi construída com Programação Orientada a Objetos dividida em três classes modulares:  
+> 1. A classe `Orientacao`, que encapsula todos os atributos de um registro do JSON e implementa o método `exibir()`, responsável por renderizar a orientação de forma limpa no terminal.  
+> 2. A classe `BaseConhecimento`, que recebe o caminho do arquivo, carrega o JSON de forma tolerante a falhas no método `carregar()`, expõe listagens por categoria e executa o algoritmo de pontuação.  
+> 3. E a classe `Assistente`, que gerencia a conversa com o cidadão, protege dados sensíveis, calcula indicadores estatísticos e persiste o histórico.  
+> Em todas as classes, utilizamos o parâmetro `self` para vincular os métodos à instância concreta do objeto em execução, garantindo que o histórico e as listas sejam independentes.  
+> O ponto alto da arquitetura é a **composição de classes**: o `Assistente` possui um atributo `self.base` que é um objeto `BaseConhecimento`, e a `BaseConhecimento` possui `self.orientacoes`, que é uma lista de objetos `Orientacao`. Isso segue exatamente as boas práticas vistas nas aulas, garantindo baixo acoplamento e alta coesão.  
+> Agora passo a palavra para o [Integrante 2], que vai detalhar a busca inteligente e rodar o programa no terminal."*
+
+---
+
+### 🎙️ PARTE 2 — Integrante 2 (02:15 até 04:45 — ~2m 30s)
+*Responsabilidades: Explicação de normalizar() e pontuar() com cálculo manual, e demonstração ao vivo dos 5 fluxos no terminal.*
+
+#### 4. Busca inteligente: `normalizar()` e `pontuar()` com cálculo real [02:15 - 03:15]
+*(Ação na tela: Mostrar as funções `normalizar()` e `pontuar()` em `base_conhecimento.py`).*
+
+> **[Integrante 2]:**  
+> *"Obrigado, [Integrante 1]! Eu vou explicar como funciona a nossa busca inteligente por regras e demonstrar a execução do assistente.  
+> Primeiro, temos a função `normalizar()`. Antes de qualquer comparação, ela converte o texto para minúsculas, remove espaços em branco extras, substitui todas as letras acentuadas — como 'á', 'ã', 'ç' — pelas suas versões neutras e troca pontuações como pontos e interrogações por espaços. Assim, 'Carteira de Trabalho?' torna-se 'carteira de trabalho'.  
+> Em seguida, o método `pontuar()` aplica os critérios pontuais do desafio:  
+> - Se uma **palavra-chave** da orientação aparecer dentro da pergunta normalizada, a orientação ganha **+3 pontos**.  
+> - E para cada palavra da pergunta que tiver **4 letras ou mais** e estiver presente no título da orientação, somamos **+1 ponto**.  
+> Vamos ver o cálculo na prática: imaginem a pergunta real:  
 > *'Como faço o cartão do sus?'*  
-> Ele ganha +3 pela chave 'cartao do sus', +3 pela chave 'sus' e +1 pela palavra 'cartao' que tem mais de 4 letras e está no título, totalizando **7 pontos**. Como 7 é maior ou igual a 6, o assistente classifica com **Confiança ALTA**."
+> A orientação correspondente ganha:  
+> - +3 pontos pela palavra-chave 'cartao do sus';  
+> - +3 pontos pela palavra-chave 'sus';  
+> - E +1 ponto porque a palavra 'cartao' tem mais de 4 letras e está no título.  
+> Total: **7 pontos**! Como a pontuação é maior ou igual a 6, o assistente classifica a resposta automaticamente como **Confiança ALTA**. Entre 3 e 5 pontos, seria confiança MÉDIA; e abaixo de 3, o assistente considera não encontrado."*
 
-#### 5. Execução ao vivo no terminal (~1m 40s)
-*(Ação na tela: Abrir o terminal e executar `python main.py`).*
-> **[Integrante 2 falando]:**  
-> "Vamos agora para a execução prática no terminal. Rodo `python main.py` e o menu principal é carregado com as 12 orientações oficiais.  
-> Vou demonstrar os 5 cenários exigidos:  
+#### 5. Execução do programa no terminal [03:15 - 04:45]
+*(Ação na tela: Abrir o terminal no VS Code e rodar `python main.py`).*
+
+> **[Integrante 2]:**  
+> *"Vou executar agora o programa digitando `python main.py`.  
+> Vejam que a base de dados com 12 orientações foi carregada com sucesso e o menu principal nos dá as opções numeradas.  
 > 
-> **1º Cenário — Pergunta encontrada:**  
-> Digito a opção 1 e faço a pergunta: *'Como tiro a carteira de trabalho digital?'*  
+> **Caso 1: Pergunta encontrada com Confiança ALTA/MÉDIA**  
+> Escolho a opção 1: 'Fazer uma pergunta'. E pergunto:  
+> *'Como faço para tirar a carteira de trabalho digital?'*  
+> *(Pressione Enter com calma)*  
+> Reparem na saída: o assistente exibe a confiança da resposta, o título, a categoria 'Documentos', a resposta objetiva, os documentos necessários, onde acessar (o app e o portal), a fonte oficial do Ministério do Trabalho com data de checagem e o aviso transparente: *'este assistente NÃO é um canal oficial'*. O assistente ainda lista orientações relacionadas e me pergunta se resolveu. Respondo 's'.  
+> 
+> **Caso 2: Pergunta não encontrada**  
+> Agora testo uma dúvida fora da base:  
+> *'Como funciona o pix?'*  
 > *(Pressione Enter)*  
-> Vejam que o assistente retornou com **Confiança ALTA**, exibiu o título, a resposta simples, os documentos necessários, a fonte oficial `gov.br`, a data em que checamos e o aviso obrigatório de que não somos canal oficial. Respondo 's' para confirmar que atendeu a dúvida.  
+> Vejam a resposta amigável: ele avisa que não encontrou, sugere usar outros termos e exibe a lista das categorias disponíveis para consulta manual.  
 > 
-> **2º Cenário — Pergunta não encontrada:**  
-> Agora digito: *'Como funciona o pix?'*  
+> **Caso 3: Dado pessoal bloqueado (Segurança e LGPD)**  
+> Se o usuário, por engano, digitar informações sensíveis:  
+> *'meu cpf é 123.456.789-00'* ou *'meu email é usuario@email.com'*  
 > *(Pressione Enter)*  
-> Como a pontuação não atinge o limiar mínimo de 3 pontos, o assistente avisa educadamente que não encontrou orientação e sugere reformular a frase ou navegar pelas categorias.  
+> Olhem o bloqueio imediato: *'Atenção: não digite CPF, telefone ou e-mail. Reescreva.'*  
+> O sistema rejeita e não salva nada no histórico!  
 > 
-> **3º Cenário — Dado pessoal bloqueado:**  
-> Para proteger a privacidade do cidadão, se alguém digitar acidentalmente: *'meu cpf é 123.456.789-00'* ou um e-mail com *@*, vejam a resposta imediata:  
-> *'Atenção: não digite CPF, telefone ou e-mail. Reescreva.'*  
-> O sistema bloqueia a entrada e não registra nenhum dado sensível.  
+> **Caso 4: Tratamento de entradas inválidas**  
+> Digito '0' para voltar ao menu principal. Se aqui eu digitar letras como 'abc', apertar Enter em branco ou digitar um número fora da faixa como '9', o programa nunca quebra; ele avisa que a opção é inválida e repete o menu de forma protegida.  
 > 
-> **4º Cenário — Tratamento de entradas inválidas:**  
-> Se eu digitar uma letra no menu, deixar vazio ou colocar uma opção inexistente como '99', o sistema nunca quebra nem encerra; ele informa a entrada inválida e volta a pedir a opção correta.  
-> 
-> **5º Cenário — Navegação por categorias:**  
-> Digito '0' para voltar ao menu e escolho a opção 2, 'Navegar por categorias'. Seleciono '1. Documentos' e vejo todas as opções numeradas. Clico em '2. Tirar o CPF pela primeira vez' e tenho acesso direto e detalhado a todas as instruções, com a opção de retornar pelo '0'."
+> **Caso 5: Navegação estruturada por categorias**  
+> Entro na opção 2. Vejo '1. Documentos', '2. Finanças' e '3. Trabalho'. Entro em Documentos digitando '1', escolho 'Tirar o CPF pela primeira vez' digitando '2', e tenho a orientação completa exibida de forma limpa. Volto ao menu principal digitando '0'.  
+> Agora passo para o [Integrante 3], que vai demonstrar a alteração ao vivo e os indicadores."*
 
 ---
 
-### 🎙️ PARTE 3 — Integrante 3 (~2 min)
-*Foco: Alteração ao Vivo no JSON, Histórico, CSV, Indicadores Reais, Decisão Técnica e Limitações.*
+### 🎙️ PARTE 3 — Integrante 3 (04:45 até 06:30 — ~1m 45s)
+*Responsabilidades: Alteração ao vivo no JSON, Exibição de histórico.json/CSV/Indicadores, Decisão técnica e Limitação.*
 
-#### 6. Alteração ao vivo no JSON (~45s)
-*(Ação na tela: Fazer a pergunta no terminal que falha, depois editar o JSON e mostrar o sucesso).*
-> **[Integrante 3 falando]:**  
-> "Agora vamos demonstrar o ponto 6 do roteiro: a alteração ao vivo na base de conhecimento.  
-> No terminal, vou na busca livre e digito: *'como conseguir carteira assinada'*  
-> *(Pressione Enter)*  
-> Reparem que o assistente **não encontrou**, porque o termo exato 'carteira assinada' ainda não estava cadastrado nas palavras-chave da nossa orientação.  
-> Agora, sem fechar o raciocínio, abro o arquivo `data/base_conhecimento.json`, vou na orientação com id 1 (Carteira de Trabalho Digital) e adiciono a palavra-chave:  
-> `\"carteira assinada\"` no array de `palavras_chave`.  
-> Salvo o arquivo, reinicio o assistente e faço exatamente a mesma pergunta: *'como conseguir carteira assinada'*.  
-> *(Pressione Enter)*  
-> Perfeito! O assistente agora encontrou imediatamente a orientação com sucesso, comprovando a flexibilidade e o dinamismo da nossa base de conhecimento!"
+#### 6. Alteração ao vivo no JSON [04:45 - 05:30]
+*(Ação na tela: No terminal, fazer a pergunta que falha. Depois abrir o JSON, editar, salvar e testar de novo).*
 
-#### 7. `historico.json`, CSV e indicadores do teste com usuários (~45s)
-*(Ação na tela: Mostrar a opção 3 no menu do assistente, depois abrir `data/historico.json` e `data/atendimentos.csv`).*
-> **[Integrante 3 falando]:**  
-> "Vamos agora analisar a persistência de dados e as métricas.  
+> **[Integrante 3]:**  
+> *"Obrigado, [Integrante 2]! Vamos agora para um dos pontos centrais da avaliação: a alteração da base ao vivo.  
+> No terminal, vou na busca livre e faço a seguinte pergunta:  
+> *'como conseguir carteira assinada'*  
+> *(Pressione Enter)*  
+> Notem que o assistente **não encontrou**, porque o termo coloquial 'carteira assinada' não constava nas palavras-chave da orientação de Carteira de Trabalho Digital.  
+> Agora, sem reiniciar nada além do assistente, abro o arquivo `data/base_conhecimento.json`.  
+> Na orientação ID 1, dentro da lista `palavras_chave`, eu adiciono:  
+> `\"carteira assinada\"`  
+> Salvo o arquivo JSON com `Ctrl + S`.  
+> Volto ao terminal, inicio o assistente novamente e refaço exatamente a mesma pergunta:  
+> *'como conseguir carteira assinada'*  
+> *(Pressione Enter)*  
+> Vejam o resultado imediato: orientação encontrada com sucesso! Isso comprova na prática o dinamismo e a facilidade de manutenção da nossa solução."*
+
+#### 7. `historico.json`, CSV e indicadores do teste [05:30 - 06:05]
+*(Ação na tela: Mostrar opção 3 no terminal, depois abrir `data/historico.json` e `data/atendimentos.csv`).*
+
+> **[Integrante 3]:**  
+> *"Agora vamos falar sobre o monitoramento dos atendimentos.  
 > No menu principal, seleciono a opção 3: 'Ver indicadores'.  
-> Realizamos um teste de usabilidade com **3 pessoas de fora da equipe**, somando **12 atendimentos reais**.  
-> Nossos indicadores consolidados foram:  
-> - **Resposta encontrada:** 91.7%  
-> - **Taxa de acerto:** 91.7%  
-> - **Tempo médio de busca:** 2.2 segundos  
+> Conforme exigido pelo edital, realizamos testes com **3 pessoas voluntárias reais de fora da nossa equipe**, somando **12 atendimentos**.  
+> Os números consolidados foram excelentes:  
+> - **Taxa de resposta encontrada:** 91.7%  
+> - **Taxa de acerto (ajudou o cidadão):** 91.7%  
+> - **Tempo médio de resposta:** 2.2 segundos  
 > - **Tentativas por atendimento:** 1.1  
-> - **Facilidade de uso média:** 4.7 de 5 estrelas.  
+> - **Nota média de facilidade de uso:** 4.7 de 5 estrelas.  
 > 
-> A única dúvida sem solução foi sobre 'certificado de reservista militar', que serviu de insumo para futuras melhorias.  
-> Toda essa trilha é salva automaticamente em `data/historico.json` com data, pergunta, id da resposta, status e tempo. Ao sair do programa ou escolher a opção 4, todos esses registros são exportados para `data/atendimentos.csv` utilizando `csv.DictWriter`, conforme ensinado na aula."
+> Tivemos uma dúvida não solucionada: *'como tirar certificado de reservista militar'*, que já registramos no README como oportunidade de expansão.  
+> Todos os atendimentos ficam registrados em `data/historico.json` com timestamp, pergunta, status e tempo medido via biblioteca `time`. E ao encerrar o assistente ou acionar a opção 4, esses dados são exportados para `data/atendimentos.csv` utilizando `csv.DictWriter`."*
 
-#### 8. Decisão técnica e limitação do assistente (~30s)
-> **[Integrante 3 falando]:**  
-> "Para finalizar:  
-> - **Nossa principal decisão técnica:** Foi adotar uma arquitetura estritamente modular com separação de responsabilidades e tolerância a falhas nos arquivos JSON, garantindo que o programa nunca trave se a base estiver ausente ou corrompida.  
-> - **Principal limitação:** A inteligência do assistente é orientada a regras léxicas e palavras-chave. Ele não possui processamento de linguagem natural neural; logo, se o cidadão fizer uma pergunta com gírias ou analogias sem palavras-chave cadastradas, o assistente precisará que a base seja enriquecida manualmente.  
-> Muito obrigado pela atenção de todos!"
+#### 8. Decisão técnica, limitação e encerramento [06:05 - 06:30]
+*(Ação na tela: Mostrar a estrutura dos arquivos no VS Code e voltar para o README).*
+
+> **[Integrante 3]:**  
+> *"Para concluir nossa apresentação técnica:  
+> - **Nossa principal decisão técnica:** Foi adotar o padrão de composição pura de classes com arquitetura defensiva. Qualquer arquivo JSON ausente ou malformatado é tratado sem que o programa aborte sua execução, e configuramos o `.gitignore` para proteger arquivos locais e de ambiente como o `.env`.  
+> - **Principal limitação identificada:** O assistente trabalha com regras léxicas determinísticas. Ele não compreende contexto semântico profundo ou gírias regionais não cadastradas previamente nas palavras-chave, o que demanda curadoria contínua da equipe.  
+> Esta foi a apresentação do Citizen Assist AI. Muito obrigado a todos pela atenção!"*
 
 ---
 
-## 💡 Dicas de Sucesso para a Gravação
-- **Cronômetro:** Deixem um cronômetro rodando no celular para não ultrapassar 8 minutos e não fazer menos de 5 minutos.
-- **Transição de voz:** Façam transições naturais (ex: *"Passo agora a palavra para o [Integrante 2], que vai explicar o algoritmo de busca e rodar o programa"*).
-- **Upload:** Ao subir no YouTube, configurem a visibilidade como **Não listado** (Unlisted). Não deixem privado, senão o professor não conseguirá avaliar!
+## 🎯 Dicas Práticas para Manter o Tempo Entre 5 e 8 Minutos
+- **Não corra com as falas:** Fale com calma e clareza. As pausas para digitar os comandos no terminal consomem cerca de 5 a 10 segundos cada uma, o que naturalmente preenche o tempo de forma profissional.
+- **Faça um teste prévio de 5 minutos:** Reúnam-se no Teams/Discord/Zoom, façam uma leitura corrida com o cronômetro aberto. Se der menos de 5 minutos, peçam para o Integrante 2 explorar com mais calma mais uma categoria ou falar mais sobre a normalização. Se passar de 7m 30s, reduzam um pouco os comentários.
+- **Formato YouTube:** Subam como **Não Listado** (Unlisted).
