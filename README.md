@@ -41,8 +41,8 @@
 ### Passo a passo
 1. Clone o repositório ou baixe os arquivos:
    ```bash
-   git clone https://github.com/SEU-USUARIO/citizen-assist-ai.git
-   cd citizen-assist-ai
+   git clone https://github.com/MiguelPutini/gs2_python.git
+   cd gs2_python
    ```
 
 2. Execute o assistente pelo terminal:
