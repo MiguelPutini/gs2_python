@@ -10,9 +10,9 @@
 
 | Nome | RM |
 |------|-----|
-| [Nome do Integrante 1] | [RMXXXXX] |
-| [Nome do Integrante 2] | [RMXXXXX] |
-| [Nome do Integrante 3] | [RMXXXXX] |
+| Miguel Putini | RM 571624 |
+| Alexandre Rizzi | RM 569621 |
+| Lucas Klein de Veiga | RM 570029 |
 
 ---
 

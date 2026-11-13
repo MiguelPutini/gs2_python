@@ -1,9 +1,9 @@
 Nome do assistente: Citizen Assist AI
 Público atendido: Jovens no primeiro emprego (14 a 24 anos) - Documentos, Trabalho e Finanças
 Integrantes e RM:
-- [Nome do Integrante 1] - RM: [XXXXX]
-- [Nome do Integrante 2] - RM: [XXXXX]
-- [Nome do Integrante 3] - RM: [XXXXX]
+- Miguel Putini - RM: 571624
+- Alexandre Rizzi - RM: 569621
+- Lucas Klein de Veiga - RM: 570029
 
 Link do repositório GitHub: https://github.com/MiguelPutini/gs2_python
 Link do vídeo técnico no YouTube: https://youtu.be/[SEU-LINK-AQUI]
